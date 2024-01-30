@@ -25,8 +25,8 @@ let e = c["b"] // изменить число в массиве под номе�
 
 
 const stydent = {
-    Name = "Lia",
-    age = 14,
+    Name : "Lia",
+    age : 14,
     location: {
         city: "London",
          street: "Avenu 37,CA",
