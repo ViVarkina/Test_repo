@@ -60,12 +60,12 @@ function convertScoreToGrade(score){
         console.log("score")
     }
 }
-
+// ААА я думала нужно перевести число в строку
 // convertScoreToGrade(4)
 
 // 4
 
-function number(n) {
+function numberToString(n) {
     if (typeof n !== "number") {
         console.log("Неправильный тип переменной")
     }
@@ -116,7 +116,7 @@ function number(n) {
 
 //5 ?
 
-function calculationMemory(size, unit) {
+function caionMemory(size, unit) {
     if (typeof size !== "number") {
         console.log("Неправильный тип переменной, введите числовую переменную")
     }
@@ -180,10 +180,10 @@ function applyDiscount(price, discount) {
     }
 }
 
-// applyDiscount(10, 90)
-// applyDiscount(1200, 101)
-// applyDiscount(1200, 50)
-// applyDiscount(1569, 25)
+applyDiscount(10, 90)
+applyDiscount(1200, 101)
+applyDiscount(1200, 50)
+ applyDiscount(2000, 25)
 
 //8, 9 ?
 
@@ -218,7 +218,7 @@ function isEven(number) {
     if (typeof number !== "number") {
         return("Неправильный тип переменной")
     }
-    else if (number / 2 % 0) {
+    else if (number / 2 ) {
         return ("true")
     }
     else {
@@ -294,26 +294,7 @@ function ageRange(age) {
 
 //14
 
-function  getSeason(month) {
-    if (typeof month !== "number") {
-        return("Неправильный тип переменной")
-    }
-    else if (month === 12 || month === 1 || month === 2) {
-        return ("Зима")
-    }
-    else if (month === 3 || month === 4 || month === 5) {
-        return ("Весна")
-    }
-    else if (month === 6 || month === 7 || month === 8) {
-        return ("Лето")
-    }
-    else if (month === 9 || month === 10 || month === 11) {
-        return ("Осень")
-    }
-    else {
-        return ("Введи цифру от 1-12")
-    }
-}
+
 
 // console.log(getSeason(3))
 // console.log(getSeason(12))
@@ -351,7 +332,7 @@ function dayOfTheWeek(day) {
 
 //17
 
-function ageRange(age) {
+function discountAgeRange(age) {
     if (typeof age !== "number") {
         return("Неправильный тип переменной")
     }
@@ -385,7 +366,7 @@ function ageRange(age) {
 
 //18
 
-function film(rating) {
+function typeFilm(rating) {
     if (typeof rating !== "string") {
         console.log("Неправильный тип переменной")
     }
@@ -415,7 +396,7 @@ function film(rating) {
 
 //19
 
-function  days(watch) {
+function  timeDays(watch) {
     if (typeof watch !== "number") {
         return ("Неправильный тип переменной")
     }
@@ -447,4 +428,5 @@ function  days(watch) {
 // console.log(days(23))
 
 //20
+
 
