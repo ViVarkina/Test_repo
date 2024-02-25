@@ -1,5 +1,5 @@
-const {users,arrUser}=require("./data")
-const {convertScoreToGrade} = require("./Task/convertScoreToGrade/convertScoreToGrade");
+const {users,arrUser}=require("../data")
+const {convertScoreToGrade} = require("../Task/convertScoreToGrade/convertScoreToGrade");
 
 const getLengthArrayCustom = (arr) => {
     let totalCount = 0
