@@ -1,4 +1,4 @@
-const {getLengthArrayCustom}=require("./data.")
+const {getLengthArrayCustom}=require("./lesson7/data.")
 const {users}=require("./data")
 
 describe("getLengthArrayCustom", () => {
