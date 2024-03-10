@@ -136,40 +136,39 @@ function printEvenNumber(startNum, stopNum){
 // printEvenNumber(0, 10)
 
 
-function getTotalSum(startValue,stopValue){
-  console.log("start")
-     let sum = 0
-     for (let i = startValue; i <= stopValue; i++) {
-         console.log(`oldsum=${sum}, i=${i}, newSum = oldSum+i${sum} + ${i}, ${sum + i}`)
-         sum = sum + i
-     }
+function getTotalSum(startValue,stopValue) {
+    console.log("start")
+    let sum = 0
+    for (let i = startValue; i <= stopValue; i++) {
+        console.log(`oldsum=${sum}, i=${i}, newSum = oldSum+i${sum} + ${i}, ${sum + i}`)
+        sum = sum + i
+    }
 //     console.log("end")
 // }
 //
 // getTotalSum(1, 20)
 
 
-
-const isPrice = (value) => {
-    if (value === 0) {
-        return false
-    }
-    let count = 0
-    for (let i = 0; i < value; i++) {
-        if(i===1 || i === value){
-            continue
+    const isPrice = (value) => {
+        if (value === 0) {
+            return false
         }
-        if (value%i===0){
-            count= count+1
+        let count = 0
+        for (let i = 0; i < value; i++) {
+            if (i === 1 || i === value) {
+                continue
+            }
+            if (value % i === 0) {
+                count = count + 1
+            }
+            // console.log(value / i)
+            // console.log(value % i)
         }
-        // console.log(value / i)
-        // console.log(value % i)
-    }
-    console.log(count, value)
-    if(count === 0){
-        return true
-    }
-    else {
-        return false
+        console.log(count, value)
+        if (count === 0) {
+            return true
+        } else {
+            return false
+        }
     }
 }
