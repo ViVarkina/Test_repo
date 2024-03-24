@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    background-color: #aee9fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;/*100% высоты нашего экрана*/
+}
+
+.container{
+    min-height: 300px;
+    width: 300px;
+    border-radius: 16px;
+    background-color: rgba(255,255,255,0.77);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+.input, .btnLogin{
+    height: 36px;
+    border-radius: 4px;
+    font-size: 15px;
+    border: 1px solid #92aad0;
+}
+
+.btnLogin{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #92aad0;
+}
+
+.btnLoginMouseOver{
+    background-color: #325185;
+}

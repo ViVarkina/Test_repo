@@ -1,0 +1,16 @@
+.red{
+    background-color: aqua;
+}
+
+.addClass{
+    text-decoration: underline;
+}
+
+.square{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

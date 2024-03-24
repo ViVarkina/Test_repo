@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>lesson2</h1>
+<div name="pop">Див1</div>
+12345
+<div>
+    1234
+    <ul class="red">
+        <li>
+            <ul>
+                <li id="testLi"></li>
+                <li></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li id="testLi2"></li>
+                <li></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<!--Коммент-->
+
+<script>
+    function testChildren(){
+        // for (let i = 0; i < document.body.childNodes.length; i++) {
+        //     console.log(document.body.childNodes[i])
+        // }
+        for (let i = 0; i < document.body.children.length; i++) {
+            console.log(document.body.children[i])
+        }
+        console.log(document.body.children)// доступ к колекции детей
+        console.log("Первый дочерний элемент ", document.body.firstElementChild)
+        console.log("Последний дочерний элемент ", document.body.lastElementChild)
+
+        console.log("Соседний элемент ", document.body.children[0].nextElementSibling)
+        console.log("Соседний элемент ", document.body.children[0].nextElementSibling.previousElementSibling.style="color:green;")
+    }
+</script>
+<script src="./scripts/scripts.js">
+</script>
+<div id="outRangeElement">
+    ...все остальное
+</div>
+
+
+<h2>Форма</h2>
+<div id="form">
+    <input placeholder="Введите имя" id="name">
+    <input type="password" placeholder="Введите пароль" id="password">
+    <input type="checkbox" id="checkbox">remember me
+    <button onclick="getData()">Войти</button>
+</div>
+<script>
+
+    function getData(){
+        const name = document.getElementById("name").value
+        const password = document.getElementById("password").value
+        const rememberMe = document.getElementById("checkbox").checked
+        if (!password || !name){
+            alert("Заполните все данные")
+            return
+        }
+        const div = document.createElement("h3")
+        div.style = "color:red"
+        div.className= "addClass"
+        div.innerHTML= `Привет ${name}`
+        const form = document.getElementById("form")
+        form.append(div)
+
+        const userData = {name, password, rememberMe}
+        console.log(userData)
+
+    }
+</script>
+<script>
+    //Модификация дом
+    //Создание тега
+    const createNode=(tagName = "p")=>{
+        let newDiv = document.createElement(tagName);
+        newDiv.className= "newDiv"
+        newDiv.innerHTML="<b>Приветствую тебя</b>"
+        return newDiv
+    }
+
+
+    // document.body.append(createNode("div")) //добавить конец
+    // document.body.prepend(createNode("h1")) // добавить в начале
+    // document.body.prepend(createNode()) // добавить в начале
+    // document.body.before(createNode("h3")) // добавить до ноды(элемента)
+    // document.body.after(createNode("h5")) // добавить после ноды(элемента)
+    // document.body.replaceWith(createNode("h4")) // замена ноды(элемента) => body
+    //
+    // const getTestLi = document.getElementById("testLi")
+    // document.body.insertAdjacentElement("beforeend", createNode("h6"))
+</script>
+</body>
+</html>
