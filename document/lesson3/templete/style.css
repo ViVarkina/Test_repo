@@ -35,3 +35,8 @@ body{
 .btnLoginMouseOver{
     background-color: #325185;
 }
+
+.inputLoginFocus{
+    background-color: #294c96;
+    color: white;
+}
