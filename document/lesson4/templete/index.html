@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="background: white" onclick=resizeElement(event)>Див</div>
+<div id="blueSquare" style="background: cornflowerblue">Див2</div>
+<input id="testInput">
+<button id="testBtn">Отменить подписку</button>
+<script src="scripts/scripts.js"></script>
+<script>
+    const resizeElement=(e)=>{
+        console.log(e.target.style.width)
+        if(e.target.style.width){
+            e.target.style.width=""
+            e.target.style.height=""
+            return
+        }
+        e.target.style.width="300px"
+        e.target.style.height="300px"
+    }
+</script>
+<script>
+    blueSquare.onclick=function (e){
+        console.log(e)
+        if(e.target.style.width){
+            e.target.style.width=""
+            e.target.style.height=""
+            return
+        }
+        e.target.style.width="500px"
+        e.target.style.height="500px"
+    }
+</script>
+</body>
+</html>
